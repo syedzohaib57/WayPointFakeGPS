@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Waypoint white theme tokens (PRD §2.1 / waypoint.css :root) -->
+    <color name="wp_bg0">#F6F7FB</color>
+    <color name="wp_bg1">#FFFFFF</color>
+    <color name="wp_bg2">#F0F2F8</color>
+    <color name="wp_bg3">#E6E9F2</color>
+    <color name="wp_line">#DDE1EC</color>
+    <color name="wp_disabled">#B5BCCF</color>
+
+    <!-- Idle accent (violet) -->
+    <color name="wp_accent">#7C6CF2</color>
+    <color name="wp_accent2">#6E5EF0</color>
+    <color name="wp_accent_dk">#5B4BE0</color>
+    <color name="wp_accent_lt">#8578FF</color>
+
+    <!-- Live accent (gold) — only while a fake location is reported (G1) -->
+    <color name="wp_live">#FFB020</color>
+    <color name="wp_live_lt">#FFC94D</color>
+    <color name="wp_live_lt2">#FFD36A</color>
+    <color name="wp_live_bar">#FFC043</color>
+    <color name="wp_on_live">#1F1400</color>
+    <color name="wp_on_accent">#FFFFFF</color>
+
+    <!-- Text -->
+    <color name="wp_text_hi">#141A33</color>
+    <color name="wp_text_mid">#5B6485</color>
+    <color name="wp_text_low">#737C9E</color>
+
+    <!-- State / label colours -->
+    <color name="wp_green">#16A34A</color>
+    <color name="wp_pink">#EC4899</color>
+
+    <!-- Splash gradient -->
+    <color name="wp_splash_1">#8B7CFF</color>
+    <color name="wp_splash_2">#6A5AE6</color>
+    <color name="wp_splash_3">#4B3DD1</color>
+
+    <!-- Hairlines on white: rgba(22,26,52, x) -->
+    <color name="wp_hairline_06">#0F161A34</color>
+    <color name="wp_hairline_07">#12161A34</color>
+    <color name="wp_hairline_08">#14161A34</color>
+    <color name="wp_hairline_09">#17161A34</color>
+    <color name="wp_hairline_10">#1A161A34</color>
+
+    <!-- Accent alphas -->
+    <color name="wp_accent_a07">#127C6CF2</color>
+    <color name="wp_accent_a10">#1A7C6CF2</color>
+    <color name="wp_accent_a12">#1F7C6CF2</color>
+    <color name="wp_accent_a20">#337C6CF2</color>
+    <color name="wp_accent_a24">#3D7C6CF2</color>
+    <color name="wp_accent_a25">#407C6CF2</color>
+    <color name="wp_accent_a28">#477C6CF2</color>
+    <color name="wp_accent_a45">#737C6CF2</color>
+    <color name="wp_accent_a55">#8C7C6CF2</color>
+
+    <!-- Live alphas -->
+    <color name="wp_live_a14">#24FFB020</color>
+    <color name="wp_live_a16">#29FFB020</color>
+    <color name="wp_live_a18">#2EFFB020</color>
+    <color name="wp_live_a50">#80FFB020</color>
+
+    <!-- Green alphas -->
+    <color name="wp_green_a14">#2416A34A</color>
+
+    <!-- Glass whites -->
+    <color name="wp_glass_84">#D6FFFFFF</color>
+    <color name="wp_glass_92">#EBFFFFFF</color>
+    <color name="wp_glass_95">#F2FFFFFF</color>
+    <color name="wp_glass_96">#F5FFFFFF</color>
+
+    <!-- Scrims -->
+    <color name="wp_scrim_60">#9905080C</color>
+    <color name="wp_scrim_62">#9E05080C</color>
+
+    <!-- White alphas (splash / drawer header) -->
+    <color name="wp_white_08">#14FFFFFF</color>
+    <color name="wp_white_14">#24FFFFFF</color>
+    <color name="wp_white_18">#2EFFFFFF</color>
+    <color name="wp_white_22">#38FFFFFF</color>
+    <color name="wp_white_25">#40FFFFFF</color>
+    <color name="wp_white_30">#4DFFFFFF</color>
+    <color name="wp_white_35">#59FFFFFF</color>
+    <color name="wp_white_45">#73FFFFFF</color>
+    <color name="wp_white_75">#BFFFFFFF</color>
+    <color name="wp_white_78">#C7FFFFFF</color>
+    <color name="wp_white_80">#CCFFFFFF</color>
+</resources>

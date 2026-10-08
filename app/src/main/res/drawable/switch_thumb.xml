@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <inset
+            android:insetTop="4dp"
+            android:insetBottom="4dp"
+            android:insetLeft="4dp"
+            android:insetRight="4dp">
+            <shape android:shape="oval">
+                <solid android:color="@color/wp_on_accent" />
+                <size android:width="18dp" android:height="18dp" />
+            </shape>
+        </inset>
+    </item>
+    <item>
+        <inset
+            android:insetTop="4dp"
+            android:insetBottom="4dp"
+            android:insetLeft="4dp"
+            android:insetRight="4dp">
+            <shape android:shape="oval">
+                <solid android:color="@color/wp_text_low" />
+                <size android:width="18dp" android:height="18dp" />
+            </shape>
+        </inset>
+    </item>
+</selector>

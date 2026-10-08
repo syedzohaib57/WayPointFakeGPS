@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/repairRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wp_h_appbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <FrameLayout
+            android:id="@+id/backBtn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/row_press_rounded"
+            android:contentDescription="@string/cd_back">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@color/wp_text_hi" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/Wp.Text.ScreenTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/repair_title" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/repairCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/card_22"
+            android:elevation="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="22dp"
+            android:paddingTop="26dp"
+            android:paddingEnd="22dp"
+            android:paddingBottom="20dp">
+
+            <FrameLayout
+                android:layout_width="88dp"
+                android:layout_height="88dp">
+
+                <ImageView
+                    android:id="@+id/warnIcon"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/wp3d_warning" />
+
+                <app.waypoint.ui.widgets.RingView
+                    android:id="@+id/repairRing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:ringStroke="5dp" />
+
+                <ImageView
+                    android:id="@+id/antennaIcon"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/wp3d_satellite_antenna"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:id="@+id/doneDisc"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/done_disc"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_check"
+                        app:tint="@color/wp_green" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/repairTitle"
+                style="@style/Wp.Text.CardTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:text="@string/repair_stuck_title" />
+
+            <TextView
+                android:id="@+id/repairBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/repair_body"
+                android:textColor="@color/wp_text_mid"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/monoBox"
+                style="@style/Wp.Mono.Readout13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_mono_box"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="8dp"
+                tools:text="31.5204° N   74.3587° E" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/repairBtn"
+                style="@style/Wp.Btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wp_h_button"
+                android:layout_marginTop="18dp"
+                app:icon="@drawable/ic_refresh"
+                android:text="@string/repair_btn" />
+
+            <TextView
+                android:id="@+id/notNowBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/row_press_rounded"
+                android:gravity="center"
+                android:text="@string/repair_not_now"
+                android:textColor="@color/wp_text_mid"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

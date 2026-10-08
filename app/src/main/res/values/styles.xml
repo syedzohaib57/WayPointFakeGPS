@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Type scale (PRD §2.2) — Inter for UI, DM Mono for every number (G3) -->
+    <style name="Wp" />
+
+    <style name="Wp.Text" parent="">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/wp_text_hi</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Wp.Text.Wordmark">
+        <item name="android:fontFamily">@font/inter_extrabold</item>
+        <item name="android:textSize">38sp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:textColor">@color/wp_bg1</item>
+    </style>
+
+    <style name="Wp.Text.ScreenTitle">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="Wp.Text.CardTitle">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Wp.Text.DrawerTitle">
+        <item name="android:fontFamily">@font/inter_extrabold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">@color/wp_bg1</item>
+    </style>
+
+    <style name="Wp.Text.Body">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Wp.Text.Body.Medium">
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+
+    <style name="Wp.Text.Body.Semibold">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="Wp.Text.RowTitle">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Wp.Text.RowSub">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/wp_text_mid</item>
+    </style>
+
+    <style name="Wp.Text.Label">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Wp.Text.Eyebrow">
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:letterSpacing">0.14</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/wp_accent</item>
+    </style>
+
+    <!-- Mono (DM Mono, tabular) -->
+    <style name="Wp.Mono" parent="Wp.Text">
+        <item name="android:fontFamily">@font/dm_mono_regular</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+    </style>
+
+    <style name="Wp.Mono.Coord">
+        <item name="android:fontFamily">@font/dm_mono_medium</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="Wp.Mono.Readout">
+        <item name="android:textSize">12.5sp</item>
+        <item name="android:textColor">@color/wp_text_low</item>
+    </style>
+
+    <style name="Wp.Mono.Readout13">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/wp_text_low</item>
+    </style>
+
+    <style name="Wp.Mono.Badge">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="Wp.Mono.Value">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/wp_text_mid</item>
+    </style>
+
+    <!-- Buttons -->
+    <style name="Wp.Button" parent="Wp.Text">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">@dimen/wp_h_button</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- Primary / live / outline action buttons: icon + label centred together -->
+    <style name="Wp.Btn" parent="Widget.Material3.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/btn_accent</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">8dp</item>
+        <item name="iconTint">@color/wp_on_accent</item>
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/wp_on_accent</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="rippleColor">@color/wp_white_18</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Wp.Btn.Outline">
+        <item name="android:background">@drawable/btn_accent_outline</item>
+        <item name="iconTint">@color/wp_accent2</item>
+        <item name="android:textColor">@color/wp_accent2</item>
+        <item name="rippleColor">@color/wp_accent_a12</item>
+    </style>
+
+    <!-- Section header -->
+    <style name="Wp.SectionHead" parent="Wp.Text.Eyebrow">
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <!-- Bottom sheets -->
+    <style name="Wp_SheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Wp.SheetStyle</item>
+        <item name="android:backgroundDimAmount">0.62</item>
+    </style>
+
+    <style name="Wp.SheetStyle" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="backgroundTint">@color/wp_bg1</item>
+        <item name="shapeAppearance">@style/Wp.SheetShape</item>
+    </style>
+
+    <style name="Wp.SheetShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">24dp</item>
+        <item name="cornerSizeTopRight">24dp</item>
+    </style>
+</resources>

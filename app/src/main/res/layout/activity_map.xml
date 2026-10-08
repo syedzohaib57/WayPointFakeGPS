@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/mapRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/wp_bg0">
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-260dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wp_scrim_top_h"
+            android:layout_gravity="top"
+            android:background="@drawable/scrim_top"
+            android:importantForAccessibility="no" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wp_scrim_bottom_h"
+            android:layout_gravity="bottom"
+            android:background="@drawable/scrim_bottom"
+            android:importantForAccessibility="no" />
+
+        <app.waypoint.ui.widgets.PinView
+            android:id="@+id/pin"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:translationY="-130dp"
+            android:importantForAccessibility="no" />
+
+        <LinearLayout
+            android:id="@+id/topChrome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/wp_chrome_margin"
+            android:layout_marginTop="@dimen/wp_chrome_top"
+            android:layout_marginEnd="@dimen/wp_chrome_margin"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/wp_h_pill"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/searchPill"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/glass_pill"
+                    android:elevation="8dp"
+                    android:foreground="@drawable/row_press_rounded"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_search"
+                        app:tint="@color/wp_accent2" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:text="@string/search_placeholder"
+                        android:textColor="@color/wp_text_low"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/livePill"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gold_pill"
+                    android:elevation="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:visibility="gone">
+
+                    <app.waypoint.ui.widgets.LiveDotView
+                        android:id="@+id/livePillDot"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/inter_bold"
+                        android:letterSpacing="0.14"
+                        android:text="@string/mocking_active"
+                        android:textColor="@color/wp_on_live"
+                        android:textSize="13sp" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/sessionTimer"
+                        style="@style/Wp.Mono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dm_mono_medium"
+                        android:textColor="@color/wp_on_live"
+                        android:textSize="13sp"
+                        tools:text="00:04:12" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/menuBtn"
+                android:layout_width="@dimen/wp_h_pill"
+                android:layout_height="@dimen/wp_h_pill"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/glass_pill"
+                android:contentDescription="@string/cd_menu"
+                android:elevation="8dp"
+                android:foreground="@drawable/row_press_rounded">
+
+                <ImageView
+                    android:id="@+id/menuIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_menu"
+                    app:tint="@color/wp_text_hi" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomStack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/attribution"
+                style="@style/Wp.Mono.Badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/attribution_bg"
+                android:paddingStart="5dp"
+                android:paddingTop="1dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="1dp"
+                android:textColor="#3B4A5A"
+                android:textSize="9sp"
+                tools:text="© OpenStreetMap contributors © CARTO" />
+
+            <HorizontalScrollView
+                android:id="@+id/chipsScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/chipsRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/wp_chrome_margin"
+                    android:paddingEnd="@dimen/wp_chrome_margin" />
+            </HorizontalScrollView>
+
+            <FrameLayout
+                android:id="@+id/panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/wp_panel_margin"
+                android:layout_marginEnd="@dimen/wp_panel_margin"
+                android:layout_marginBottom="@dimen/wp_panel_bottom"
+                android:background="@drawable/glass_panel"
+                android:elevation="14dp"
+                android:paddingStart="@dimen/wp_panel_pad"
+                android:paddingTop="@dimen/wp_panel_pad"
+                android:paddingEnd="@dimen/wp_panel_pad"
+                android:paddingBottom="16dp">
+
+                <include
+                    android:id="@+id/panelPosition"
+                    layout="@layout/panel_position" />
+
+                <include
+                    android:id="@+id/panelAcquiring"
+                    layout="@layout/panel_acquiring" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <include
+        android:id="@+id/drawer"
+        layout="@layout/drawer_panel" />
+</androidx.drawerlayout.widget.DrawerLayout>

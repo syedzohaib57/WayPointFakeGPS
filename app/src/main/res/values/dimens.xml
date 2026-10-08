@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shape radii (PRD §2.3) -->
+    <dimen name="wp_radius_panel">24dp</dimen>
+    <dimen name="wp_radius_card">16dp</dimen>
+    <dimen name="wp_radius_card_lg">22dp</dimen>
+    <dimen name="wp_radius_step_card">18dp</dimen>
+    <dimen name="wp_radius_btn">14dp</dimen>
+    <dimen name="wp_radius_pill">16dp</dimen>
+    <dimen name="wp_radius_chip">8dp</dimen>
+    <dimen name="wp_radius_chip_lg">10dp</dimen>
+    <dimen name="wp_radius_sheet">24dp</dimen>
+    <dimen name="wp_radius_tile">10dp</dimen>
+    <dimen name="wp_radius_tile_lg">11dp</dimen>
+    <dimen name="wp_radius_fab">14dp</dimen>
+    <dimen name="wp_radius_field">12dp</dimen>
+    <dimen name="wp_radius_item">12dp</dimen>
+
+    <!-- Heights -->
+    <dimen name="wp_h_button">54dp</dimen>
+    <dimen name="wp_h_button_mid">46dp</dimen>
+    <dimen name="wp_h_button_sm">44dp</dimen>
+    <dimen name="wp_h_pill">52dp</dimen>
+    <dimen name="wp_h_chip">36dp</dimen>
+    <dimen name="wp_h_row">56dp</dimen>
+    <dimen name="wp_h_field">48dp</dimen>
+    <dimen name="wp_h_appbar">56dp</dimen>
+    <dimen name="wp_h_drawer_item">48dp</dimen>
+    <dimen name="wp_h_sheet_row">52dp</dimen>
+
+    <!-- Map screen -->
+    <dimen name="wp_panel_margin">12dp</dimen>
+    <dimen name="wp_panel_bottom">30dp</dimen>
+    <dimen name="wp_panel_pad">18dp</dimen>
+    <dimen name="wp_panel_content_h">160dp</dimen>
+    <dimen name="wp_chrome_margin">14dp</dimen>
+    <dimen name="wp_chrome_top">12dp</dimen>
+    <dimen name="wp_map_offset">130dp</dimen>
+    <dimen name="wp_scrim_top_h">150dp</dimen>
+    <dimen name="wp_scrim_bottom_h">320dp</dimen>
+
+    <!-- Misc -->
+    <dimen name="wp_drawer_width">300dp</dimen>
+    <dimen name="wp_icon_tile">34dp</dimen>
+    <dimen name="wp_fab_size">56dp</dimen>
+    <dimen name="wp_screen_pad">16dp</dimen>
+    <dimen name="wp_content_max_width">480dp</dimen>
+</resources>

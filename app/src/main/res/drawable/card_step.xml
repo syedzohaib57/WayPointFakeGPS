@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Active setup step card: lifted white, 18dp radius, 2dp accent start edge -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/wp_accent" />
+            <corners android:radius="@dimen/wp_radius_step_card" />
+        </shape>
+    </item>
+    <item android:start="2dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="#FFFFFF"
+                android:endColor="#F7F8FC" />
+            <corners
+                android:topLeftRadius="16dp"
+                android:bottomLeftRadius="16dp"
+                android:topRightRadius="@dimen/wp_radius_step_card"
+                android:bottomRightRadius="@dimen/wp_radius_step_card" />
+            <stroke android:width="1dp" android:color="@color/wp_hairline_07" />
+        </shape>
+    </item>
+</layer-list>

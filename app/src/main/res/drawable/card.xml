@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:angle="270"
+        android:startColor="#FFFFFF"
+        android:endColor="#F7F8FC" />
+    <corners android:radius="@dimen/wp_radius_card" />
+    <stroke android:width="1dp" android:color="@color/wp_hairline_07" />
+</shape>

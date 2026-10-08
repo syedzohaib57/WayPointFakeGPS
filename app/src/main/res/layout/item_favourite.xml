@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/card"
+    android:elevation="3dp"
+    android:foreground="@drawable/row_press_rounded"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/wp_h_row"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="10dp">
+
+    <FrameLayout
+        android:id="@+id/favTile"
+        android:layout_width="36dp"
+        android:layout_height="36dp">
+
+        <View
+            android:id="@+id/favDot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/dot" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/favName"
+            style="@style/Wp.Text.RowTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="Office — Gulberg" />
+
+        <TextView
+            android:id="@+id/favCoords"
+            style="@style/Wp.Mono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:maxLines="1"
+            android:textColor="@color/wp_text_low"
+            android:textSize="13sp"
+            tools:text="31.5102° N   74.3441° E" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dragHandle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/cd_reorder"
+        android:padding="4dp"
+        android:src="@drawable/ic_drag_handle"
+        app:tint="@color/wp_disabled" />
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Debug-only: let adb launch every screen directly for screenshot audits. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application>
+        <activity
+            android:name=".ui.setup.SetupActivity"
+            android:exported="true"
+            tools:node="merge"
+            tools:replace="android:exported" />
+        <activity
+            android:name=".ui.map.MapActivity"
+            android:exported="true"
+            tools:node="merge"
+            tools:replace="android:exported" />
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:exported="true"
+            tools:node="merge"
+            tools:replace="android:exported" />
+        <activity
+            android:name=".ui.route.RouteActivity"
+            android:exported="true"
+            tools:node="merge"
+            tools:replace="android:exported" />
+        <activity
+            android:name=".ui.favourites.FavouritesActivity"
+            android:exported="true"
+            tools:node="merge"
+            tools:replace="android:exported" />
+        <activity
+            android:name=".ui.repair.RepairActivity"
+            android:exported="true"
+            tools:node="merge"
+            tools:replace="android:exported" />
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:exported="true"
+            tools:node="merge"
+            tools:replace="android:exported" />
+    </application>
+</manifest>

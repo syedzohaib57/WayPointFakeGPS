@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="34dp">
+
+    <View
+        android:layout_width="36dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/sheet_handle" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/row_altitude"
+        android:textColor="@color/wp_text_hi"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/altSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="3050"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:progressDrawable="@drawable/seek_track"
+            android:splitTrack="false"
+            android:thumb="@drawable/seek_thumb" />
+
+        <TextView
+            android:id="@+id/altValue"
+            style="@style/Wp.Mono"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="15sp"
+            tools:text="217 m" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineSpacingMultiplier="1.5"
+        android:text="@string/altitude_note"
+        android:textColor="@color/wp_text_low"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/altDone"
+        style="@style/Wp.Button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wp_h_button_mid"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/btn_accent"
+        android:text="@string/sheet_done"
+        android:textColor="@color/wp_on_accent" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 132dp glass tile holding the 3D satellite on Splash -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:angle="250"
+        android:startColor="@color/wp_white_30"
+        android:endColor="@color/wp_white_08" />
+    <corners android:radius="40dp" />
+    <stroke android:width="1dp" android:color="@color/wp_white_45" />
+</shape>

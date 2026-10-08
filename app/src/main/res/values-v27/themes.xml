@@ -1,0 +1,13 @@
+<resources>
+    <style name="Theme.Waypoint" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@color/wp_bg0</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="colorPrimary">@color/wp_accent</item>
+        <item name="colorOnPrimary">@color/wp_on_accent</item>
+        <item name="android:textColorPrimary">@color/wp_text_hi</item>
+        <item name="android:textColorSecondary">@color/wp_text_mid</item>
+    </style>
+</resources>

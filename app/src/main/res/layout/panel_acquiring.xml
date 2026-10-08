@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/acquiringPanel"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <FrameLayout
+        android:layout_width="88dp"
+        android:layout_height="88dp">
+
+        <app.waypoint.ui.widgets.RingView
+            android:id="@+id/acquireRing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:ringStroke="4dp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/orbit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/wp_orbit" />
+
+        <ImageView
+            android:id="@+id/acquireSatellite"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:src="@drawable/wp3d_satellite" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/acquiring_fix"
+            android:textColor="@color/wp_text_hi"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/acquireStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/wp_text_mid"
+            android:textSize="13sp"
+            tools:text="Registering with mock provider…" />
+
+        <TextView
+            android:id="@+id/acquireSats"
+            style="@style/Wp.Mono.Readout13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:text="sats 00/12   0%" />
+    </LinearLayout>
+</LinearLayout>

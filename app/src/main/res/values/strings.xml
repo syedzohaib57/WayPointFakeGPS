@@ -1,0 +1,226 @@
+<resources>
+    <string name="app_name">Waypoint</string>
+
+    <!-- Mock service -->
+    <string name="notif_channel">Mocking</string>
+    <string name="notif_title">Mocking active · %1$s</string>
+    <string name="notif_text">Reporting a fake location to the system</string>
+    <string name="action_stop">Stop</string>
+    <string name="route_title">Route</string>
+
+    <!-- Splash -->
+    <string name="splash_sub">Mock location · precision tools</string>
+    <string name="splash_line1">Checking mock provider…</string>
+    <string name="splash_line2">Reading last fix…</string>
+    <string name="splash_line3">Loading map tiles…</string>
+
+    <!-- Setup guide -->
+    <string name="setup_title">Set up</string>
+    <string name="setup_counter">%1$d of 3</string>
+    <string name="setup_s1_title">Turn on Developer Options</string>
+    <string name="setup_s1_body">Settings → About phone → tap Build number seven times</string>
+    <string name="setup_s1_btn">Open settings</string>
+    <string name="setup_s2_title">Choose Waypoint as the mock location app</string>
+    <string name="setup_s2_body">Developer options → Select mock location app → Waypoint</string>
+    <string name="setup_s2_btn">Open developer options</string>
+    <string name="setup_s3_title">Check it works</string>
+    <string name="setup_s3_body">Waypoint injects a test fix and reads it back from the fused provider.</string>
+    <string name="setup_s3_btn">Run check</string>
+    <string name="setup_finish">Finish</string>
+    <string name="setup_opening">Opening…</string>
+    <string name="setup_checking">Checking…</string>
+    <string name="setup_not_selected">Waypoint isn\'t the selected mock app yet</string>
+    <string name="setup_perm_needed">Allow location access so the self-check can read the fix back</string>
+    <string name="setup_read_back_fail">Couldn\'t read the fix back — try again near a window</string>
+    <string name="check_line1">Provider registered</string>
+    <string name="check_line2">Test fix injected · 31.5204° N 74.3587° E</string>
+    <string name="check_line3">Read back OK · fused matches mock</string>
+    <string name="detect_note">Apps can detect mock locations. Some will refuse to work.</string>
+    <string name="battery_title">Set battery to Unrestricted</string>
+    <string name="battery_sub">Keeps mocking alive while the screen is off</string>
+
+    <!-- Map -->
+    <string name="search_placeholder">Search a place or address</string>
+    <string name="mocking_active">MOCKING ACTIVE</string>
+    <string name="eyebrow_selected">SELECTED POSITION</string>
+    <string name="eyebrow_reported">REPORTED POSITION</string>
+    <string name="start_mocking">Start mocking</string>
+    <string name="stop_mocking">Stop mocking</string>
+    <string name="releasing_provider">Releasing provider…</string>
+    <string name="acquiring_fix">Acquiring fix</string>
+    <string name="acquire_step1">Registering with mock provider…</string>
+    <string name="acquire_step2">Injecting position…</string>
+    <string name="acquire_step3">Verifying fused location…</string>
+    <string name="sats_fmt">"sats %1$02d/12   %2$d%%"</string>
+    <string name="readout_idle">"gps · %1$d sats    acc %2$d m    provider idle"</string>
+    <string name="readout_active">"alt %1$d m    acc %2$d m    brg %3$d°"</string>
+    <string name="toast_moved_live">Mocked position moved</string>
+    <string name="toast_moved_idle">Pin moved</string>
+    <string name="toast_route_done">Route finished · position held at last point</string>
+    <string name="toast_centred">Centred on real location</string>
+    <string name="toast_select_mock_app">Waypoint isn\'t the selected mock app yet — finish the setup</string>
+    <string name="dropped_pin">Dropped pin</string>
+    <string name="current_location">Current location</string>
+    <string name="cd_menu">Menu</string>
+    <string name="cd_recentre">Centre on real location</string>
+    <string name="cd_live">Mocking active, reporting %1$s</string>
+
+    <!-- Drawer -->
+    <string name="drawer_map">Map</string>
+    <string name="drawer_route">Route</string>
+    <string name="drawer_favs">Favourites</string>
+    <string name="drawer_repair">Repair location</string>
+    <string name="drawer_setup">Setup guide</string>
+    <string name="drawer_settings">Settings</string>
+    <string name="drawer_idle">provider: idle · v%1$s</string>
+    <string name="drawer_active">provider: active · v%1$s</string>
+    <string name="drawer_privacy">No data is collected</string>
+
+    <!-- Search -->
+    <string name="search_results">RESULTS</string>
+    <string name="search_recent">RECENT</string>
+    <string name="search_empty_title">No places match “%1$s”</string>
+    <string name="search_empty_sub">Try a street, a landmark or coordinates</string>
+    <string name="search_osm_credit">Search © OpenStreetMap contributors</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_clear">Clear</string>
+
+    <!-- Favourites -->
+    <string name="favs_title">Favourites</string>
+    <string name="favs_empty_title">No saved places yet</string>
+    <string name="favs_add_current">Add current location</string>
+    <string name="favs_saved">Saved “%1$s”</string>
+    <string name="favs_removed">Removed “%1$s”</string>
+    <string name="favs_renamed">Renamed to “%1$s”</string>
+    <string name="favs_exported">Exported %1$d places to waypoint-favourites.json</string>
+    <string name="favs_imported">Imported %1$d places</string>
+    <string name="favs_import_failed">Couldn\'t read that file</string>
+    <string name="fav_go">Go here</string>
+    <string name="fav_mock">Start mocking here</string>
+    <string name="fav_rename">Rename</string>
+    <string name="fav_remove">Remove</string>
+    <string name="fav_name_label">Name</string>
+    <string name="fav_save">Save</string>
+    <string name="cd_add_favourite">Add current position to favourites</string>
+    <string name="cd_import">Import places</string>
+    <string name="cd_export">Export places</string>
+    <string name="cd_reorder">Drag to reorder</string>
+
+    <!-- Route -->
+    <string name="route_summary">"%1$d points · %2$s · ~%3$d min"</string>
+    <string name="route_speed">Speed</string>
+    <string name="route_speed_fmt">"%1$d km/h"</string>
+    <string name="route_loop">Loop</string>
+    <string name="route_reverse">Reverse</string>
+    <string name="route_play">Play route</string>
+    <string name="route_stop">Stop route</string>
+    <string name="route_save">Save</string>
+    <string name="route_saved">Route saved</string>
+    <string name="route_name_label">Route name</string>
+    <string name="route_default_name">Gulberg loop</string>
+    <string name="route_save_title">Save route</string>
+    <string name="route_save_btn">Save route</string>
+    <string name="route_hint_tap">Tap the map to add points</string>
+    <string name="route_menu_add">Add points by tapping</string>
+    <string name="route_menu_stop_add">Stop adding points</string>
+    <string name="route_menu_import">Import GPX</string>
+    <string name="route_menu_clear">Clear points</string>
+    <string name="route_menu_delete">Delete saved route</string>
+    <string name="route_cleared">Points cleared</string>
+    <string name="route_deleted">Route deleted</string>
+    <string name="route_gpx_imported">%1$d points imported</string>
+    <string name="route_need_points">Add at least two points first</string>
+    <string name="route_pct_fmt">%1$d%%</string>
+    <string name="cd_route_menu">Route options</string>
+
+    <!-- Repair -->
+    <string name="repair_title">Repair</string>
+    <string name="repair_stuck_title">Location seems stuck</string>
+    <string name="repair_body">Your device is still reporting the last mocked position. This clears it and requests a fresh GPS fix.</string>
+    <string name="repair_done_title">Location refreshed</string>
+    <string name="repair_done_body">Your device is reporting a fresh GPS fix again.</string>
+    <string name="repair_line1">Clearing mock provider…</string>
+    <string name="repair_line2">Requesting fresh GPS fix…</string>
+    <string name="repair_line3">Waiting for satellites…</string>
+    <string name="repair_line4">Fix acquired · %1$d satellites</string>
+    <string name="repair_btn">Clear and refresh</string>
+    <string name="repair_working">Working… %1$d%%</string>
+    <string name="repair_done_btn">Done</string>
+    <string name="repair_not_now">Not now</string>
+    <string name="repair_timeout">No fix yet — go outdoors and try again</string>
+    <string name="toast_fresh_fix">Fresh GPS fix acquired</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="sec_location">LOCATION</string>
+    <string name="sec_map">MAP</string>
+    <string name="sec_automation">AUTOMATION</string>
+    <string name="sec_about">ABOUT</string>
+    <string name="row_accuracy">Accuracy</string>
+    <string name="row_altitude">Altitude</string>
+    <string name="row_interval">Update interval</string>
+    <string name="row_jitter">Random jitter</string>
+    <string name="row_jitter_sub">Wobbles the position by a few metres</string>
+    <string name="row_map_style">Map style</string>
+    <string name="row_offline">Offline tiles</string>
+    <string name="row_offline_sub">"%1$d MB cached"</string>
+    <string name="row_tasker">Tasker plugin</string>
+    <string name="row_intent">Intent API</string>
+    <string name="row_detection">How detection works</string>
+    <string name="row_setup">Setup guide</string>
+    <string name="row_privacy">Privacy</string>
+    <string name="row_privacy_sub">No data is collected</string>
+    <string name="row_licences">Open-source licences</string>
+    <string name="version_fmt">"Waypoint %1$s (%2$d)"</string>
+    <string name="metres_fmt">"%1$d m"</string>
+    <string name="interval_half">0.5 seconds</string>
+    <string name="interval_one">1 second</string>
+    <string name="interval_fmt">"%1$d seconds"</string>
+    <string name="style_light">Light</string>
+    <string name="style_dark">Dark</string>
+    <string name="style_dark_nl">Dark · no labels</string>
+    <string name="style_voyager">Voyager</string>
+    <string name="altitude_note">Lahore sits at about 217 m. Apps rarely check altitude, but a value of exactly 0 is a common tell.</string>
+    <string name="sheet_done">Done</string>
+    <string name="offline_summary">"%1$d MB · %2$s tiles · %3$s z11–z15"</string>
+    <string name="offline_body">Cached tiles let the map draw with no data connection.</string>
+    <string name="offline_clear">Clear cache</string>
+    <string name="offline_download">Download area</string>
+    <string name="offline_cleared">Tile cache cleared</string>
+    <string name="offline_downloading">Downloading tiles for %1$s…</string>
+    <string name="offline_done">Offline tiles ready · %1$d MB</string>
+    <string name="offline_failed">Tile download stopped early — try again</string>
+    <string name="tasker_body">Waypoint registers as a Tasker action plugin. Set, move or stop the mock from any profile.</string>
+    <string name="intent_body">Any app — or an adb shell — can drive Waypoint with broadcast intents.</string>
+    <string name="intent_example">am broadcast -a app.waypoint.SET \\\n  --ef lat 31.5204 --ef lon 74.3587 --ei acc 5\nam broadcast -a app.waypoint.STOP</string>
+    <string name="copy_example">Copy example</string>
+    <string name="copied">Copied to clipboard</string>
+    <string name="external_control_title">Allow external control</string>
+    <string name="external_control_sub">Lets broadcasts and Tasker drive Waypoint</string>
+    <string name="detect_body">Android marks every fix from a mock provider with an isMock flag. Apps that read it can refuse to work — banking, ride-hailing and some games do. Waypoint does not hide the flag: doing so needs root and breaks a guarantee other apps rely on.\n\nRandom jitter and a realistic altitude make readings look natural, but they never remove the flag.</string>
+    <string name="privacy_body">Waypoint has no account, no analytics and no network access beyond fetching map tiles. Favourites and routes stay on this device. Nothing about where you are — or pretend to be — ever leaves it.</string>
+    <!-- Automation -->
+    <string name="tasker_edit_title">Tasker action</string>
+    <string name="tasker_action_set">Set mock position</string>
+    <string name="tasker_action_stop">Stop mocking</string>
+    <string name="tasker_action_route">Play saved route</string>
+    <string name="tasker_lat_hint">Latitude</string>
+    <string name="tasker_lon_hint">Longitude</string>
+    <string name="tasker_name_hint">Label (optional)</string>
+    <string name="tasker_route_hint">Route id</string>
+    <string name="tasker_bad_coords">Enter a valid latitude and longitude</string>
+    <string name="tasker_blurb_set">Waypoint: mock at %1$s</string>
+    <string name="tasker_blurb_route">Waypoint: play route %1$d</string>
+    <string name="trampoline_title">Tap to mock at %1$s</string>
+    <string name="trampoline_text">Android blocked the background start — tap to apply</string>
+    <string name="tile_label">Waypoint</string>
+
+    <!-- Google Location Accuracy hint -->
+    <string name="gms_hint_title">Google Maps may show your real spot</string>
+    <string name="gms_hint_body">This phone is in High accuracy mode, so Google scans nearby Wi-Fi and Bluetooth to work out where you really are — and that can override the mock in Google Maps and other Google-based apps.\n\nSet Location to GPS only (turn off Wi-Fi and Bluetooth scanning) and Google Maps will follow Waypoint.</string>
+    <string name="gms_hint_open">Open location settings</string>
+    <string name="gms_hint_dismiss">Got it</string>
+    <string name="gms_hint_toast">Tip: set Location to GPS only so Google Maps follows the mock</string>
+
+    <string name="licences_body">Waypoint is built on open source:\n\n· osmdroid — Apache License 2.0\n· Lottie for Android — Apache License 2.0\n· Koin — Apache License 2.0\n· AndroidX &amp; Material Components — Apache License 2.0\n· Microsoft Fluent Emoji (3D artwork) — MIT License\n· Inter typeface — SIL Open Font License 1.1\n· DM Mono typeface — SIL Open Font License 1.1\n· Map data © OpenStreetMap contributors, tiles © CARTO\n\nFull licence texts: opensource.org/licenses and scripts.sil.org/OFL</string>
+</resources>

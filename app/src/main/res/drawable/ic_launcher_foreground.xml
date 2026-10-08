@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- White reticle pin on the violet gradient background -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- outer ring -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4.5"
+        android:fillColor="#00000000"
+        android:pathData="M54,38 a16,16 0 1,0 0.001,0 Z" />
+    <!-- ticks N E S W -->
+    <path android:fillColor="#FFFFFF" android:pathData="M52.4,26 h3.2 v7 h-3.2 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M52.4,75 h3.2 v7 h-3.2 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M26,52.4 v3.2 h7 v-3.2 Z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M75,52.4 v3.2 h7 v-3.2 Z" />
+    <!-- core dot -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,49 a5,5 0 1,0 0.001,0 Z" />
+</vector>

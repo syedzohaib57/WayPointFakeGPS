@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="16dp"
+        android:layout_height="16dp">
+
+        <View
+            android:id="@+id/lineIdle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ring_line" />
+
+        <app.waypoint.ui.widgets.RingView
+            android:id="@+id/lineSpin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:ringIndeterminate="true"
+            app:ringStroke="2dp" />
+
+        <ImageView
+            android:id="@+id/lineCheck"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_check_circle_fill"
+            android:visibility="gone"
+            app:tint="@color/wp_green" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/lineText"
+        style="@style/Wp.Mono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:textColor="@color/wp_text_low"
+        android:textSize="12sp" />
+</LinearLayout>

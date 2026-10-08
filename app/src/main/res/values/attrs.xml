@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RingView">
+        <attr name="ringColor" format="color" />
+        <attr name="ringTrackColor" format="color" />
+        <attr name="ringStroke" format="dimension" />
+        <attr name="ringIndeterminate" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="PinView">
+        <attr name="pinLive" format="boolean" />
+    </declare-styleable>
+</resources>

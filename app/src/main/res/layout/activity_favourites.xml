@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/favRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wp_h_appbar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <FrameLayout
+            android:id="@+id/backBtn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/row_press_rounded"
+            android:contentDescription="@string/cd_back">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@color/wp_text_hi" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/Wp.Text.ScreenTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/favs_title" />
+
+        <FrameLayout
+            android:id="@+id/importBtn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/row_press_rounded"
+            android:contentDescription="@string/cd_import">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_file_upload"
+                app:tint="@color/wp_text_mid" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/exportBtn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/row_press_rounded"
+            android:contentDescription="@string/cd_export">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_file_download"
+                app:tint="@color/wp_text_mid" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/favList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="110dp"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/emptyState"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="40dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/emptyPin"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:contentDescription="@null"
+                android:src="@drawable/wp3d_round_pushpin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/favs_empty_title"
+                android:textColor="@color/wp_text_mid"
+                android:textSize="15sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/emptyAddBtn"
+                style="@style/Wp.Btn.Outline"
+                android:layout_width="240dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="14dp"
+                app:icon="@drawable/ic_add_location"
+                android:text="@string/favs_add_current" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fab"
+            android:layout_width="@dimen/wp_fab_size"
+            android:layout_height="@dimen/wp_fab_size"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/fab_bg"
+            android:contentDescription="@string/cd_add_favourite"
+            android:elevation="10dp"
+            android:foreground="@drawable/row_press_rounded">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_add"
+                app:tint="@color/wp_on_accent" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>
